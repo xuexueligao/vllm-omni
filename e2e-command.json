@@ -1,0 +1,37 @@
+{
+  "cwd": "/data1/xuezhihao/wf07-test-20260911/vllm-omni-pr-20260913",
+  "command": [
+    "/data1/xuezhihao/wf07-test-20260911/omni-server-env/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "pytest_asyncio.plugin",
+    "-p",
+    "xdist.plugin",
+    "-p",
+    "pytest_mock",
+    "tests/e2e/features/comfyui/test_minimax_h3_upscale.py",
+    "-m",
+    "core_model and diffusion and gpu",
+    "--run-level",
+    "core_model",
+    "-v",
+    "-s"
+  ],
+  "env": {
+    "PYTHONNOUSERSITE": "1",
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "8",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONPATH": "/data1/xuezhihao/wf07-test-20260911/vllm-omni-pr-20260913",
+    "COMFYUI_URL": "http://127.0.0.1:8188",
+    "VLLM_OMNI_URL": "http://127.0.0.1:8091/v1",
+    "WF07_LORA_PATH": "models/minimax-h3-turbo/minimax_h3_fl2v_turbo_4step_v1.0_768p_bf16.safetensors",
+    "WF07_OUTPUT_DIR": "/data1/xuezhihao/wf07-test-20260911/submit-20260914/e2e-final",
+    "WF07_SEED": "2026091401"
+  },
+  "source_sha256": {
+    "tests/e2e/features/comfyui/test_minimax_h3_upscale.py": "adb23e89ff935412d461f1ae0d673f4c4078bde1996cc5d69139e9a68cd68351",
+    "apps/ComfyUI-vLLM-Omni/scripts/validate_h3_upscale.py": "25aa06730827a19caee5465fb94af79354a167de29dc3e037fd45e343ece4ed7"
+  }
+}

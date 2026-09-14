@@ -1,3 +1,19 @@
+W0914 11:48:00.024000 3813497 torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+INFO 09-14 11:48:01 [patch.py:252] NVFP4 W4A4 weight_scale NaN-clamp: installed.
+INFO 09-14 11:48:01 [patch.py:503] inductor factorable-divisibility patch: installed.
+INFO 09-14 11:48:01 [patch.py:568] [cumem-cuda] CuMemAllocator._python_free_callback patched: asleep guard extended to all platforms.
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- /data1/xuezhihao/wf07-test-20260911/omni-server-env/bin/python
+cachedir: .pytest_cache
+rootdir: /data1/xuezhihao/wf07-test-20260911/vllm-omni-pr-20260913
+configfile: pyproject.toml
+plugins: mock-3.15.1
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 1 item
+
+tests/e2e/features/comfyui/test_minimax_h3_upscale.py::test_minimax_h3_upscale_e2e INFO 09-14 11:48:02 [scheduler.py:277] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 09-14 11:48:02 [kernel.py:369] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+Queued real H3 workflow: 5f1db575-0ee9-454f-a619-67b0695b3880
 {
   "source_streams": [
     {
@@ -81,3 +97,14 @@
     "upscaled": "ee942718591e716eb3ca6987126098f644921af8f1381bba66d217d58d62ff76"
   }
 }
+--- Running test: test_minimax_h3_upscale_e2e
+PASSED
+
+=============================== warnings summary ===============================
+../omni-server-env/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  /data1/xuezhihao/wf07-test-20260911/omni-server-env/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- Running Summary
+================== 1 passed, 14 warnings in 147.27s (0:02:27) ==================
