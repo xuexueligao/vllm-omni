@@ -61,7 +61,7 @@
   "audio_alignment": {
     "all": {
       "lag_ms": 0.0,
-      "correlation": 1.0
+      "correlation": 0.9999999999999999
     },
     "early": {
       "lag_ms": 0.0,
@@ -69,15 +69,15 @@
     },
     "late": {
       "lag_ms": 0.0,
-      "correlation": 1.0
+      "correlation": 0.9999999999999998
     }
   },
   "passed": true,
-  "prompt_id": "5f1db575-0ee9-454f-a619-67b0695b3880",
-  "elapsed_seconds": 146.004,
+  "prompt_id": "a70b6b03-7644-4403-b61b-74894469bba5",
+  "elapsed_seconds": 150.908,
   "source": "Real remote vLLM-Omni H3 output, saved before frame upscale",
   "file_sha256": {
-    "generated": "f9cab07cf5712dac6cefaa006635a4bfd7d8751f4935bf5ba401b3ec4d2b96c7",
-    "upscaled": "ee942718591e716eb3ca6987126098f644921af8f1381bba66d217d58d62ff76"
+    "generated": "309292ebf320bd2b6eb42510dcfa9fa23d5922fe88a5e343b707b109d49f8016",
+    "upscaled": "ce86987fe92b1ac09225128aec2b07c0ae3bb4399ff2b00605821077e1e96fbd"
   }
 }

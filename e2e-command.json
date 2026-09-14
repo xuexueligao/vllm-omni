@@ -27,11 +27,16 @@
     "COMFYUI_URL": "http://127.0.0.1:8188",
     "VLLM_OMNI_URL": "http://127.0.0.1:8091/v1",
     "WF07_LORA_PATH": "models/minimax-h3-turbo/minimax_h3_fl2v_turbo_4step_v1.0_768p_bf16.safetensors",
-    "WF07_OUTPUT_DIR": "/data1/xuezhihao/wf07-test-20260911/submit-20260914/e2e-final",
-    "WF07_SEED": "2026091401"
+    "WF07_OUTPUT_DIR": "/data1/xuezhihao/wf07-test-20260911/submit-20260914/e2e-main",
+    "WF07_SEED": "2026091402"
   },
   "source_sha256": {
-    "tests/e2e/features/comfyui/test_minimax_h3_upscale.py": "adb23e89ff935412d461f1ae0d673f4c4078bde1996cc5d69139e9a68cd68351",
-    "apps/ComfyUI-vLLM-Omni/scripts/validate_h3_upscale.py": "25aa06730827a19caee5465fb94af79354a167de29dc3e037fd45e343ece4ed7"
-  }
+    "apps/ComfyUI-vLLM-Omni/README.md": "9b0a2fb108b87baf8740a868d42ebe818f3eed5e38ca9d434f5db177d6caed8b",
+    "apps/ComfyUI-vLLM-Omni/docs/wf07-h3-upscale.md": "253579c81f3421bc767dbac8ddea436e07b754229563d3fa02be37f3fc572901",
+    "apps/ComfyUI-vLLM-Omni/example_workflows/vLLM-Omni MiniMax H3 Video Upscale.api.json": "22e8d32a05f60cc33341e7135a5824e750779e5f0368e251df6493b989214476",
+    "apps/ComfyUI-vLLM-Omni/example_workflows/vLLM-Omni MiniMax H3 Video Upscale.json": "e3c91b3ead03e814d5d35dafcd8430f92770ff9876b219e44eea1ce64d0e03e4",
+    "apps/ComfyUI-vLLM-Omni/scripts/validate_h3_upscale.py": "a2bd87030dc0b7cfa189ada62a35682657caabc98afee7a88cba46e2d7eb154a",
+    "tests/e2e/features/comfyui/test_minimax_h3_upscale.py": "adb23e89ff935412d461f1ae0d673f4c4078bde1996cc5d69139e9a68cd68351"
+  },
+  "base_commit": "58adeec05f151e18542323cb4644b009b83cfef3"
 }

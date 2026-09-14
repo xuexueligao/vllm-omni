@@ -1,7 +1,7 @@
 {
   "prompt": [
-    1,
-    "5f1db575-0ee9-454f-a619-67b0695b3880",
+    0,
+    "a70b6b03-7644-4403-b61b-74894469bba5",
     {
       "1": {
         "class_type": "VLLMOmniGenerateVideo",
@@ -13,7 +13,6 @@
           "width": 1344,
           "height": 768,
           "fps": 24,
-          "num_frames": 124,
           "model_params": [
             "7",
             0
@@ -25,7 +24,8 @@
           "lora": [
             "9",
             0
-          ]
+          ],
+          "duration": 5.167
         }
       },
       "2": {
@@ -93,8 +93,7 @@
         "class_type": "VLLMOmniMiniMaxH3Params",
         "inputs": {
           "audio_flow_shift": 3.0,
-          "flow_shift": 6.0,
-          "aspect_ratio": "16:9"
+          "flow_shift": 6.0
         }
       },
       "8": {
@@ -106,7 +105,7 @@
           "true_cfg_scale": 1.0,
           "vae_use_slicing": false,
           "vae_use_tiling": true,
-          "seed": 2026091401
+          "seed": 2026091402
         }
       },
       "9": {
@@ -182,6 +181,12 @@
                   "type": "VIDEO_PARAMS",
                   "shape": 7,
                   "link": 10
+                },
+                {
+                  "name": "fast_h3",
+                  "type": "FASTH3_DEPLOYMENT",
+                  "shape": 7,
+                  "link": null
                 }
               ],
               "outputs": [
@@ -205,7 +210,7 @@
                 1344,
                 768,
                 24,
-                124
+                5.167
               ]
             },
             {
@@ -492,8 +497,7 @@
               },
               "widgets_values": [
                 3.0,
-                6.0,
-                "16:9"
+                6.0
               ]
             },
             {
@@ -530,7 +534,7 @@
                 1.0,
                 false,
                 true,
-                2026091401,
+                2026091402,
                 "fixed"
               ]
             },
@@ -650,7 +654,7 @@
                 "Node name for S&R": "Note"
               },
               "widgets_values": [
-                "WF-07: remote H3 generation -> frame upscale -> original FPS + audio -> MP4.\nConfigure the remote URL and a server-side Turbo path. The relative LoRA path is resolved on the vLLM-Omni server.\nThis preset: FL2VA server, LightX2V v1.0 768p Turbo, 5 sigma points, video shift 6, audio shift 3; 124 frames at 24 FPS.\nBase H3: disconnect LoRA, set steps to 50 and video shift to 12.\nRequires the audio-preserving MP4 decoder (PR #6782 or equivalent), the H3 aspect_ratio field, and RealESRGAN_x2plus.pth in ComfyUI models/upscale_models."
+                "WF-07: remote H3 generation -> frame upscale -> original FPS + audio -> MP4.\nConfigure the remote URL and a server-side Turbo path. The relative LoRA path is resolved on the vLLM-Omni server.\nThis preset: FL2VA server, LightX2V v1.0 768p Turbo, 5 sigma points, video shift 6, audio shift 3; 5.167 seconds -> 124 frames at 24 FPS.\nBase H3: disconnect LoRA, set steps to 50 and video shift to 12.\nRequires ComfyUI-vLLM-Omni with PR #7456 (duration input, automatic H3 aspect ratio, audio decode fix), and RealESRGAN_x2plus.pth in ComfyUI models/upscale_models."
               ]
             }
           ],
@@ -765,19 +769,19 @@
           }
         }
       },
-      "client_id": "6ceb36c4-3fa5-47f3-bf5a-765e777373e2",
-      "create_time": 1789357683830
+      "client_id": "7ad0dcf7-3d92-4474-ba91-1e3a26a23080",
+      "create_time": 1789358946856
     },
     [
-      "6",
-      "10"
+      "10",
+      "6"
     ]
   ],
   "outputs": {
     "10": {
       "images": [
         {
-          "filename": "generated_00003_.mp4",
+          "filename": "generated_00004_.mp4",
           "subfolder": "WF07",
           "type": "output"
         }
@@ -789,7 +793,7 @@
     "6": {
       "images": [
         {
-          "filename": "upscaled_00003_.mp4",
+          "filename": "upscaled_00004_.mp4",
           "subfolder": "WF07",
           "type": "output"
         }
@@ -806,27 +810,23 @@
       [
         "execution_start",
         {
-          "prompt_id": "5f1db575-0ee9-454f-a619-67b0695b3880",
-          "timestamp": 1789357683834
+          "prompt_id": "a70b6b03-7644-4403-b61b-74894469bba5",
+          "timestamp": 1789358946859
         }
       ],
       [
         "execution_cached",
         {
-          "nodes": [
-            "3",
-            "7",
-            "9"
-          ],
-          "prompt_id": "5f1db575-0ee9-454f-a619-67b0695b3880",
-          "timestamp": 1789357683839
+          "nodes": [],
+          "prompt_id": "a70b6b03-7644-4403-b61b-74894469bba5",
+          "timestamp": 1789358946867
         }
       ],
       [
         "execution_success",
         {
-          "prompt_id": "5f1db575-0ee9-454f-a619-67b0695b3880",
-          "timestamp": 1789357826005
+          "prompt_id": "a70b6b03-7644-4403-b61b-74894469bba5",
+          "timestamp": 1789359092970
         }
       ]
     ]
