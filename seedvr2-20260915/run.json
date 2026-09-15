@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-15",
+  "prompt_id": "f0e4ae7c-291b-4629-bc25-ff2e46c7b4a9",
+  "h3_seed": 2026091502,
+  "seedvr2_seed": 42,
+  "seedvr2_plugin_commit": "4490bd1f482e026674543386bb2a4d176da245b9",
+  "submitted_file_sha256": {
+    "apps/ComfyUI-vLLM-Omni/README.md": "54dcd27ba6dac2c979db93c4ed03a24ecbc797e84e58cfb432304b682d0d2bb4",
+    "apps/ComfyUI-vLLM-Omni/docs/wf07-h3-upscale.md": "4e902f33dae29595b2452c2ceeaff7727ff2f17cd8929a077136ba6367ecc09f",
+    "apps/ComfyUI-vLLM-Omni/example_workflows/vLLM-Omni MiniMax H3 Video Upscale.api.json": "e66be1f8796bf9349f95b79114562fe9a39efb290205bc8ccf30b3e1024aab45",
+    "apps/ComfyUI-vLLM-Omni/example_workflows/vLLM-Omni MiniMax H3 Video Upscale.json": "b8cb4934729e5c723ad876984d353a76b8eeb1d35f24131c1828a298b58d3dac"
+  },
+  "comparison": "Full-frame panels followed by central crops. The original crop is enlarged 2x with bicubic interpolation for display; the SeedVR2 crop is displayed at native pixels. Original audio repeats for the two segments.",
+  "media_sha256": {
+    "upscaled.mp4": "1750442d46870f2f2caae58d4f22c824573256e02818cef9266e4e24da1c67a0",
+    "generated.mp4": "182a4bae5d8bc6c4a4616d2352c14a773d6f833015b1db2fbbbcd0593ed7aa10",
+    "comparison.mp4": "31ce86d766c4ef1a400a3f9504628cd26d9bba049e458de26032b0982b693139"
+  },
+  "code_commit": "cacafda4490a54fd92b7f0cdc54a6755064a9503",
+  "screenshot_sha256": {
+    "comfyui-upscaled-preview.jpg": "7e7593bdb2eb2aa26eb414ceb14cacf9f20802705056b251ce98211a60588a5e",
+    "comfyui-workflow.jpg": "466f70540a2a313f1516b6cd825504c540c7b51b06af23f2bf37883b86c4a25b"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "source_streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1344,
+      "height": 768,
+      "r_frame_rate": "24/1",
+      "duration": "5.166667",
+      "nb_frames": "124"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "32000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "duration": "5.167000",
+      "nb_frames": "163"
+    }
+  ],
+  "output_streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 2688,
+      "height": 1536,
+      "r_frame_rate": "24/1",
+      "duration": "5.166667",
+      "nb_frames": "124"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "32000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "duration": "5.167000",
+      "nb_frames": "163"
+    }
+  ],
+  "checks": {
+    "width_doubled": true,
+    "height_doubled": true,
+    "same_frame_count": true,
+    "h3_frame_constraint": true,
+    "24_fps_preserved": true,
+    "video_duration_preserved": true,
+    "generated_audio_present": true,
+    "sample_rate_preserved": true,
+    "channels_preserved": true,
+    "audio_duration_within_one_frame": true,
+    "audio_content_preserved": true,
+    "audio_offset_within_one_frame": true,
+    "audio_drift_within_one_frame": true,
+    "requested_width": true,
+    "requested_height": true,
+    "requested_frame_count": true,
+    "remote_generation_executed": true
+  },
+  "audio_alignment": {
+    "all": {
+      "lag_ms": 0.0,
+      "correlation": 1.0000000000000002
+    },
+    "early": {
+      "lag_ms": 0.0,
+      "correlation": 1.0000000000000002
+    },
+    "late": {
+      "lag_ms": 0.0,
+      "correlation": 1.0
+    }
+  },
+  "passed": true,
+  "prompt_id": "f0e4ae7c-291b-4629-bc25-ff2e46c7b4a9",
+  "elapsed_seconds": 701.248,
+  "source": "Real remote vLLM-Omni H3 output, saved before frame upscale",
+  "file_sha256": {
+    "generated": "182a4bae5d8bc6c4a4616d2352c14a773d6f833015b1db2fbbbcd0593ed7aa10",
+    "upscaled": "1750442d46870f2f2caae58d4f22c824573256e02818cef9266e4e24da1c67a0"
+  }
+}
